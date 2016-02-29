@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homelayout"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.elec390.sarah.randomfacts.MainActivity"
+    android:background="#9ab9ff">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The Random Facts App - 390"
+        android:id="@+id/welcome"
+        android:layout_marginTop="29dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:autoText="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK SPORTS FACTS"
+        android:id="@+id/sportsbutton"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/crazybutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHECK CRAZY FACTS"
+        android:id="@+id/crazybutton"
+        android:clickable="true"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/sportsbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIT (OPENS CHROME)"
+        android:id="@+id/quitbutton"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:id="@+id/settingsbutton"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_above="@+id/quitbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOOGLE CHROME"
+        android:id="@+id/chromebutton"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_below="@+id/crazybutton"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
