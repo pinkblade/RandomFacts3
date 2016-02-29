@@ -11,13 +11,15 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".CrazyFactsActivity" />
-        <activity android:name=".SportsFactsActivity"/>
+        <activity android:name=".SportsFactsActivity" />
         <activity android:name=".FactsModel" />
-        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".AllFactsActivityFragment"></activity>
     </application>
 
 </manifest>

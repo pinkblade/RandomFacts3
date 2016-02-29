@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.elec390.sarah.randomfacts.MainActivity"
-    android:background="#9ab9ff">
+    android:background="#dac2fc">
 
 
     <TextView
@@ -32,10 +32,11 @@
         android:id="@+id/sportsbutton"
         android:clickable="true"
         android:enabled="true"
+        android:layout_marginTop="39dp"
         android:layout_below="@+id/welcome"
-        android:layout_marginTop="65dp"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/crazybutton" />
+        android:layout_alignParentEnd="true"
+        android:background="#f7ffeb" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,10 +44,11 @@
         android:text="CHECK CRAZY FACTS"
         android:id="@+id/crazybutton"
         android:clickable="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="17dp"
+        android:background="#f7ffec"
         android:layout_below="@+id/sportsbutton"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -57,7 +59,8 @@
         android:clickable="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="#f7ffeb" />
 
     <Button
         android:layout_width="wrap_content"
@@ -66,22 +69,44 @@
         android:id="@+id/settingsbutton"
         android:enabled="true"
         android:clickable="true"
-        android:layout_above="@+id/quitbutton"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="24dp"
-        android:layout_alignParentStart="true" />
+        android:background="#f7ffeb"
+        android:layout_marginEnd="33dp"
+        android:layout_alignTop="@+id/chromebutton"
+        android:layout_alignEnd="@+id/insertbutton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GOOGLE CHROME"
+        android:text="CHROME"
         android:id="@+id/chromebutton"
         android:enabled="true"
         android:clickable="true"
-        android:layout_below="@+id/crazybutton"
-        android:layout_marginTop="33dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:background="#f7ffeb"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="33dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert New Facts"
+        android:id="@+id/insertbutton"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/settingsbutton"
+        android:background="#f7ffeb"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check All Facts"
+        android:id="@+id/checkbutton"
+        android:layout_marginBottom="34dp"
+        android:background="#f7ffeb"
+        android:layout_above="@+id/quitbutton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>
